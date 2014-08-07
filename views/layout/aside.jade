@@ -1,0 +1,44 @@
+aside.sidebar
+  #fixed-top-bar
+    a.logo(href="")
+      img(src="/images/logo.png")
+    a.signup(href="#") Sign Up
+    a.login(href="#") Log In
+    a#trigger-nav.nav-link.icon-hamburger(href="/more")
+      span X
+
+
+  section.content
+    header
+      a.logo(href="/")
+        img(src="/images/logo.png")
+      p.description Focus on content and only that. <br /> Less noise = Absolute bliss!
+
+    section#recent_posts.block
+      h1 Recent Posts
+      ul.posts
+        li: a(href="#") Purple Haze!
+        li: a(href="#") Happy Kathmandu!
+        li: a(href="#") Hello World!
+
+    section#nav.block
+      h1 Give me more
+      nav(role="navigation")
+        ul
+          li: a(href="#") Home
+          li: a(href="#") Work
+          li: a(href="#", title="subscribe via email") Subscribe via Email
+          li: a(href="#", title="subscribe to RSS") RSS
+
+    section#tags.block
+      .tagcloud
+        a(href="#") Music
+        a(href="#") Movies
+        a(href="#") Hiking
+        a(href="#") Cricket
+        a(href="#") Code
+        a(href="#") Internet
+        a(href="#") Jokes
+        a(href="#") Messages
+        a(href="#") Thoughts
+        a(href="#") Random

@@ -1,0 +1,10 @@
+"/var/www/minimalist/releases/current/logs/minimalist.out"
+"/var/www/minimalist/releases/current/logs/upstart"
+"/var/www/minimalist/releases/current/logs/minimalist.err" {
+  create 777 www-data www-data
+  rotate 720
+  compress
+  postrotate
+    reload minimalist >/dev/null 2>&1 || true
+  endscript
+}

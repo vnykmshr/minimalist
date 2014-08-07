@@ -1,0 +1,24 @@
+{
+  "name": "minimalist",
+  "description": "The git repository for the \"minimalist\" blog application.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/vnykmshr/minimalist",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3",
+    "jade": "*",
+    "smush": "0",
+    "optimist": "0",
+    "recluster": "0",
+    "proc-utils": "0.0.4",
+    "method-override": "~2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vnykmshr/minimalist.git"
+  },
+  "author": "Vinayak Mishra <viks@vnykmshr.com>"
+}
