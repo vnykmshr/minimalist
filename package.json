@@ -1,20 +1,21 @@
 {
   "name": "minimalist",
-  "description": "The git repository for the \"minimalist\" blog application.",
+  "description": "The git repository for the \"minimalist\" blog app",
   "version": "0.0.1",
-  "homepage": "https://github.com/vnykmshr/minimalist",
+  "homepage": "github.com/vnykmshr/minimalist",
   "private": true,
   "scripts": {
     "start": "node app"
   },
   "dependencies": {
-    "express": "3",
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.3",
     "jade": "*",
-    "smush": "0",
-    "optimist": "0",
-    "recluster": "0",
-    "proc-utils": "0.0.4",
-    "method-override": "~2.0.2"
+    "morgan": "^1.6.1",
+    "proc-utils": "0.0.9",
+    "smush": "0.0.5",
+    "static-favicon": "^1.0.2"
   },
   "repository": {
     "type": "git",

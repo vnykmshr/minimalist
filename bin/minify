@@ -15,35 +15,35 @@ var csstemplates = [
 ];
 
 function init(cb) {
-    var actions = [];
-    jstemplates.forEach(function (entry) {
-        actions.push(function (cb) {
-            smush.js({
-                template: entry
-            }, cb);
-        })
-    });
+  var actions = [];
+  jstemplates.forEach(function (entry) {
+    actions.push(function (cb) {
+      smush.js({
+        template: entry
+      }, cb);
+    })
+  });
 
-    csstemplates.forEach(function (entry) {
-        actions.push(function (cb) {
-            smush.css({
-                template: entry
-            }, cb);
-        })
-    });
+  csstemplates.forEach(function (entry) {
+    actions.push(function (cb) {
+      smush.css({
+        template: entry
+      }, cb);
+    })
+  });
 
-    var count = actions.length;
-    var check = function (err, result) {
-        util.log(util.inspect(err || result));
+  var count = actions.length;
+  var check = function (err, result) {
+    util.log(util.inspect(err || result));
 
-        if (--count === 0) {
-            cb('done');
-        }
-    };
+    if (--count === 0) {
+      cb('done');
+    }
+  };
 
-    actions.forEach(function (action) {
-        action(check);
-    });
+  actions.forEach(function (action) {
+    action(check);
+  });
 }
 
 init(util.log);
